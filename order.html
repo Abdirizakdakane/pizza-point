@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaPoint - Welcome All</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <p><span>Pizza</span><span>Point</span></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="order"><a href="order.html">Place an order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <h1>Place an order here</h1>
+            <form>
+                <label>Size</label>
+                <select id="size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+                <label>Crust</label>
+                <select id="crust">
+                    <option value="Gluten-free">Gluten-free</option>
+                    <option value="Crispy">Crispy</option>
+                    <option value="Stuffed">Stuffed</option>
+                </select>
+                <label>Toppings</label>
+                <select id="toppings">
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Mushrooms">Mushrooms</option>
+                    <option value="Sausage">Sausage</option>
+                </select>
+                <label> Number of Pizzas</label>
+                <input type="number" id="quantity" value="1" required>
+                <label>Delivery option</label>
+                <select id="delivery">
+                    <option value="To be delivered">To be delivered</option>
+                    <option value="To be picked by self">To be picked by self</option> 
+                </select>
+                <div id="deliveryOpt"></div>
+                <input type="submit" id="checkout" value="Checkout">
+            </form>
+            <div class="total">
+                <h3>Order Summary</h3>
+                <div>
+                    <p>Number of Pizzas ordered</p>
+                    <h3 id="noPizzas"></h3>
+                    <br>
+                    <p>Description of order</p>
+                    <h3 id="desc"></h3>
+                    <br>
+                    <p>Total amounts charged</p>
+                    <h3>Ksh <span id="amount"></span></h3>
+                    <br>
+                    <p>Delivery option</p>
+                    <h3 id="deliveryOption"></h3>
+                    <p id="deliveryMsg"></p>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyrights &copy; pizzapoint.com. 2020, All rights reserved.
+    </footer>
+</body>
+</html>
+
+<script src="main.js"></script>
